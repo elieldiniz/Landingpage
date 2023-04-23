@@ -2,13 +2,17 @@ import React from "react";
 import Avatar from '../img/siberp.png'
 import '../styles/components/sidebar.sass';
 
+import SocialNetworks from "./SocialNetworks";
+import InformationContainer from "./InformationContainer";
+
+
 const Sidebar = () => {
     return(
         <aside id='sidebar'>
             <img src={Avatar} alt="Avatar" />
             <p className="title">Desenvolvedor</p>
-            <p>redes sociais</p>
-            <p>informacoes de contato</p>
+            <SocialNetworks/>
+            <InformationContainer/>
             <a href="" className="btn">
                 Dawnload curriculo
             </a>
@@ -16,3 +20,4 @@ const Sidebar = () => {
     )
 }
 export default Sidebar
+
