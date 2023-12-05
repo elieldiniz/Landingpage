@@ -3,14 +3,17 @@ import '../styles/components/aboutconteiner.sass'
 const AboutComteiner = () => {
     return(
       <section className='about-container'>
-        <h2>Sobre</h2>
+        <h2>Quem sou eu</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorum itaque minima provident corrupti minus tenetur placeat? 
-            Possimus praesentium facilis voluptatibus recusandae illum eum, ad, at officia, magnam ea quia?
+            Bom ,Sou um entusiasta apaixonado por tecnologia, dedicado ao desenvolvimento front-end. <br />
+            Minha jornada no mundo do código é guiada pela curiosidade e pela busca constante de <br />
+            aprender algo novo todos os dias.
         </p>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, animi commodi sint illo officiis velit reiciendis molestias maxime
-            iusto nostrum architecto officia voluptates aliquam odit magnam rerum omnis quibusdam labore.
+            Trabalho principalmente com HTML, CSS e JavaScript, sempre tentando encontrar maneiras <br />
+            de tornar as interfaces mais amigáveis e acessíveis. Acredito que a tecnologia tem o <br />
+            poder de simplificar as coisas e estou comprometido em fazer minha parte para contribuir <br />
+            de maneira positiva.
         </p>
 
       </section>

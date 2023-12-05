@@ -23,8 +23,8 @@ const TechnologieContent = () => {
     return(
        <section className='technologies-container'>
         <h2>Tecnologias</h2>
-        <div className='technologie-grid'></div>
-            {technologies.map((tech) =>(
+        <div className='technologie-grid'>
+        {technologies.map((tech) =>(
                <div className='technology-card' id ={tech.id} key={tech.id}>
                     {tech.icon}
                     <div className='tecnology-info'>
@@ -34,6 +34,8 @@ const TechnologieContent = () => {
                     </div>
                </div>
             ))}
+        </div>
+           
 
        </section>
     )
