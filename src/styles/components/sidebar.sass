@@ -2,7 +2,7 @@
 @use '../mixin'
 
 #sidebar
-    background-color: variables.$bg-color
+    background: rgba(#00FFFF, 0.3)
     flex: 1 1 0
     border-radius: variables.$container-border-radius
     display: flex
@@ -11,23 +11,38 @@
     text-align: center
     position: relative
     padding: 3rem 0
+    border: solid 1px #00FFFF
 
     img
-        max-width: 70%
+        max-width: 40%
+        max-height: 40%
         border-radius: variables.$container-border-radius
         position: absolute
         top: -3rem
+        border: solid 3px #00FFFF
     
     .title
-        color: #943a37
+        color: #00FFFF
         background: variables.$bg-color-secondary
         border-radius: variables.$container-border-radius
-        margin-top:  15rem
+        margin-top:16rem
         padding: .8rem 1.2rem
         cursor: pointer
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        letter-spacing: 2px
         
         :hover
             color: #4b528b
     
     .btn
-       @include mixin.btn
+        text-decoration: none
+        border-radius: 2rem
+        background-color:#00FFFF
+        padding: .6rem .6rem
+        color: #111
+        font-weight: bold
+        border:  solid px #0de679
+        
+    .btn:hover
+        background: linear-gradient(to right, #0de679, #0b26f7)
+        color: #A52A2A
