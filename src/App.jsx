@@ -1,5 +1,5 @@
 import MainContents from './components/MainContent'
-import Sidebar from './components/sidebar'
+import Sidebar from './components/Sidebar'
 import './styles/components/app.sass'
 
 
