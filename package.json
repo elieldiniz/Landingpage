@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:tailwind": "./src/styles/input.css -o ./dist/output.css --watch",
+    "start": "npm run build:tailwind && react-scripts start"
+
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
@@ -20,6 +23,7 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "sass": "^1.62.0",
+    "tailwindcss": "^3.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "vite": "^4.5.0"

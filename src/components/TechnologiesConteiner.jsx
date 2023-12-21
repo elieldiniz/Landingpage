@@ -1,28 +1,31 @@
 
-/*const socialNetworks= [
-    {name: 'JavaScript', icon:<JavaScript/>},
-    {name: 'TypeScript', icon:<TypeScript/>},
-    {name: 'Node.js', icon:<Node/>},
-    {name: 'Next.js', icon:<Next/>},
-    {name: 'React.js', icon:<React/>},
-    {name: 'PostgreSQL', icon:<PostgreSQl/>}
-]
-*/
-import JavaScript from '../img/JavaScript.png'
-import JavaScriptImage from "./Icon/JavaScript"
 
-const TechnologieContent = () =>{
-    return(
-        <section>
-            <div className="container">
-                <h1>technologie</h1>
-                <div>
-                    <p>javascript</p>
-                    <JavaScriptImage src ={JavaScript}/>
-                </div>
+import React from 'react';
+import JavaScript from '../img/JavaScript.png';
+import JavaScriptImage from './Icon/JavaScript'
+import html from "../img/html.png"
+
+const iconsTech = [
+    {name: 'JavaScript', image:JavaScript},
+    {name: 'Html', image:html},
+];
+
+const TechnologieContent = () => {
+  return (
+    <section>
+      <div className="container">
+        <h1>technologie</h1>
+        <div className='flex '>
+          {iconsTech.map((items) => (
+            <div key={items.name} className='border '>
+              <p>{items.name}</p>
+              <JavaScriptImage src={items.image} />
             </div>
-        </section>
-    )
-}
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default TechnologieContent
+export default TechnologieContent;

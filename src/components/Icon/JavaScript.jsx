@@ -1,7 +1,9 @@
 import React from 'react';
+
+
 const JavaScriptImage = (props) => {
   return (
-    <div>
+    <div className='w-20'>
       <i>
         <img src={props.src} alt="JavaScript" />
       </i>
