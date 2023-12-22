@@ -26,16 +26,16 @@ const ProjectContainer = () => {
   return (
     <section className='project-container'>
       <h2>Projetos</h2>
-      <div className='CardProject'>
+      <div className='CardProject gap-2'>
       {projects.slice(startIndex, endIndex).map((project) => (
-  <div key={project.id} className='carditem'>
-    <h3>{project.name}</h3>
-    <p>{project.description}</p>
-    <a href={project.html_url} target="_blank" rel="noopener noreferrer" className='buttonProjct'>
-      Ver Projeto
-    </a>
-  </div>
-  ))}
+          <div key={project.id} className='carditem'>
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <a href={project.html_url} target="_blank" rel="noopener noreferrer" className='buttonProjct'>
+              Ver Projeto
+            </a>
+          </div>
+          ))}
 
       </div>
       

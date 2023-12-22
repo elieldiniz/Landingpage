@@ -6,7 +6,7 @@ const InformationContainer = () => {
             <section id="information">
                 <div className="info-card card-1">
                     <div>
-                        <h3>Telefone</h3>
+                        <h3 className="">Telefone</h3>
                         <p>69 99971-8444</p>
                     </div>
                 </div>
