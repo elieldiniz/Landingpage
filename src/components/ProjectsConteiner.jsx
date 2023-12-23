@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/components/projectconteiner.sass';
+import lupa from "../img/lupa.png"
 
 const ProjectContainer = () => {
   const [projects, setProjects] = useState([]);
@@ -28,11 +29,11 @@ const ProjectContainer = () => {
       <h2>Projetos</h2>
       <div className='CardProject gap-2'>
       {projects.slice(startIndex, endIndex).map((project) => (
-          <div key={project.id} className='carditem'>
+          <div key={project.id} className='carditem pulse1'>
             <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.html_url} target="_blank" rel="noopener noreferrer" className='buttonProjct'>
-              Ver Projeto
+            <a href={project.html_url} target="_blank" rel="noopener noreferrer" className='buttonProjct flex'>
+              
+              <img src={lupa} alt="ver diretorio" className='cardicon'/>
             </a>
           </div>
           ))}

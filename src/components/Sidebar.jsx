@@ -13,7 +13,7 @@ const Sidebar = () => {
             <p className="title">Desenvolvedor fornt-end</p>
             <SocialNetworks/>
             <InformationContainer/>
-            <a href="" className="btn">
+            <a href="" className="button pulse ">
                 Dawnload curriculo
             </a>
         </aside>

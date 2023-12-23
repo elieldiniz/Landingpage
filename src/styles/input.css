@@ -3,3 +3,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --button-bg-color: #00FFFF;
+    --button-bg-color-second: #01090f;
+    --button-pulse-color: #05aaf791;
+}
+
+.button {
+    padding: 16px 28px;
+    color: #fff;
+    background-image: linear-gradient(
+      135deg,
+      var(--button-bg-color),
+      var(--button-bg-color-second)
+    );
+    font-size: 18px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.pulse {
+    animation: Pulse 2s
+      cubic-bezier(0.6, 0.2, 0.4, 1) 0.5s infinite;
+  }
+  
+  @keyframes Pulse {
+    from {
+      box-shadow: 0 0 0 0 var(--button-pulse-color);
+    }
+  
+    to {
+      box-shadow: 0 0 1px 10px transparent;
+    }
+  }
