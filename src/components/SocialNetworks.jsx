@@ -5,16 +5,16 @@ import{FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa'
 import React from "react";
 
 const socialNetworks= [
-    {name: 'linkedin', icon:<FaLinkedinIn/>},
-    {name: 'Github', icon:<FaGithub/>},
-    {name: 'instagram', icon:<FaInstagram/>}
+    {name: 'linkedin', icon:<FaLinkedinIn/>, src:"https://www.linkedin.com/in/eliel-diniz-9836a2235/"},
+    {name: 'Github', icon:<FaGithub/>, src:'https://github.com/elieldiniz'},
+    {name: 'instagram', icon:<FaInstagram/>, src:'https://www.instagram.com/diz_eliel/'}
 ]
 
 const SocialNetworks = () => {
     return(
             <section id='social-networks'>
                 {socialNetworks.map((network) => (
-                    <a href='#' className='social-btn' id={network.name} key={network.name}>
+                    <a href={network.src} className='social-btn' id={network.name} target="_blank" key={network.name}>
                         {network.icon}
                     </a>
                 ))}

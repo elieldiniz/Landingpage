@@ -23,7 +23,7 @@ const TechnologieContent = () => {
   return (
     <section>
       <div className="technologies-container">
-        <h1 className="title">technologie</h1>
+        <h1 className="title">Tecnologia</h1>
         <div className='technologie-grid'>
           {iconsTech.map((items) => (
             <div key={items.name} className='technology-card '>

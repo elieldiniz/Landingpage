@@ -1,40 +1,48 @@
+// Sass Responsivo
+@use '../variables'
+@use '../mixin'
+    
+
+$button-pulse-color: #00e6f791
+
 .CardProject
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-
-
-:root
-    --button-bg-color: #c666e7
-    --button-bg-color-second: #e3ac4a
-    --button-pulse-color: #f0b86491
-
-
-
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
 
 .carditem
-    border-radius: 10px
-    background-image: linear-gradient(135deg, var(--button-bg-color), var(--button-bg-color-second))
-    box-shadow:  1px 1px 3px #1cc9f5
-    width: 10rem
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: space-between
+  border-radius: 10px
+  background-image: variables.$gradient 
+  box-shadow: 1px 1px 3px #1cc9f5
+  width: 10rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
 
+  @media (min-width: 768px)
+    width: 15rem
 
+  @media (min-width: 1024px)
+    width: 20rem
 
 .pulse1
   animation: Pulse 2s cubic-bezier(0.6, 0.2, 0.4, 1) 0.5s infinite
 
 @keyframes Pulse
   from
-    box-shadow: 0 0 0 0 var(--button-pulse-color)
+    box-shadow: 0 0 0 0 $button-pulse-color
 
   to
     box-shadow: 0 0 4px 20px transparent
 
 .cardicon
+  width: 2rem
+
+  @media (min-width: 768px)
+    width: 3rem
+
+  @media (min-width: 500)
     width: 2rem
-    
- 
+
+
