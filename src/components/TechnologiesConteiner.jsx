@@ -23,11 +23,11 @@ const TechnologieContent = () => {
   return (
     <section>
       <div className="technologies-container">
-        <h1 className="title">Tecnologia</h1>
+        <h2>Tecnologia</h2>
         <div className='technologie-grid'>
           {iconsTech.map((items) => (
             <div key={items.name} className='technology-card '>
-              <p>{items.name}</p>
+              <h1>{items.name}</h1>
               <JavaScriptImage src={items.image} name={items.name} />
             </div>
           ))}

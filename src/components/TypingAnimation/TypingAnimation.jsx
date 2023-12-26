@@ -32,7 +32,7 @@ const TypingAnimation = () => {
 
   return(
     <>
-        <div className="typing-animation p-2 text-xl font-mono border-r-2 border-black">{displayedText}</div> <br />
+        <div className="typing-animation p-2 text-xl font-mono border-r-2 border-black lg:flex">{displayedText}</div> <br />
         
     </>
     

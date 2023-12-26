@@ -1,11 +1,11 @@
 import MainContents from './components/MainContent'
 import Sidebar from './components/Sidebar'
-import './styles/components/app.sass'
+
 
 
 function App() {
     return (
-      <div id="portfolio">
+      <div id="flex flex-wrap gap-2 bg-black m-0 h-screen sm:h-auto overflow-x-hidden">
         <Sidebar/>
         <MainContents/>
       </div>

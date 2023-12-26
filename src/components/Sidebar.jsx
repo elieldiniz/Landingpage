@@ -9,8 +9,9 @@ import InformationContainer from "./InformationContainer";
 const Sidebar = () => {
     return(
         <aside id='sidebar'>
+            <div></div>
             <img src={Avatar} alt="Avatar" className="Avatar"/>
-            <p className="title">Desenvolvedor fornt-end</p>
+            <p className="title">Desenvolvedor front-end</p>
             <SocialNetworks/>
             <InformationContainer/>
             <a href="" className="button pulse ">
