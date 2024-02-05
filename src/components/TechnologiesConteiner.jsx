@@ -2,7 +2,7 @@
 import '../styles/components/technologieconteiner.sass'
 import React from 'react';
 import JavaScript from '../img/JavaScript.png';
-import JavaScriptImage from './Icon/JavaScript'
+import JavaScriptImage from './JavaScript'
 import html from "../img/html.png"
 import css from "../img/css.png"
 import reactjs from "../img/reactjs.png"
@@ -27,7 +27,7 @@ const TechnologieContent = () => {
         <div className='technologie-grid'>
           {iconsTech.map((items) => (
             <div key={items.name} className='technology-card '>
-              <h1>{items.name}</h1>
+              <h1 className="">{items.name}</h1>
               <JavaScriptImage src={items.image} name={items.name} />
             </div>
           ))}

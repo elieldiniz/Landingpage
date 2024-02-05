@@ -7,7 +7,7 @@ const InformationContainer = () => {
                 <div className="info-card card-1">
                     <div>
                         <h3 className="">Telefone</h3>
-                        <p>69 99971-8444</p>
+                        <p>69 99931-1324</p>
                     </div>
                 </div>
                 <div className="info-card">

@@ -1,11 +1,11 @@
 import React from 'react';
-
+import '../styles/components/icons.sass'
 
 const JavaScriptImage = (props) => {
   return (
-    <div className='w-20 '>
+    <div>
       <i>
-        <img src={props.src} alt={props.name} className='w-20 text-neutral-950 ' />
+        <img src={props.src} alt={props.name} className='icons' />
       </i>
     </div>
   );
