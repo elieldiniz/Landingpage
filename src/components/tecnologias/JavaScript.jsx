@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/components/icons.sass'
+import '../../styles/components/tecnologias/technologieconteiner.sass'
 
 const JavaScriptImage = (props) => {
   return (
-    <div>
+    <div className='div-icon'>
       <i>
         <img src={props.src} alt={props.name} className='icons' />
       </i>

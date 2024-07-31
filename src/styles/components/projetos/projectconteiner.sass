@@ -1,0 +1,65 @@
+// Sass Responsivo
+@use '../libs/variables'
+@use '../libs/mixin'
+    
+
+$button-pulse-color: #00e6f791
+
+.project-container
+  background:  linear-gradient(135deg, rgba(10,159,130,1) 0%, rgba(5,6,6,1) 26%, rgba(21,33,31,1) 82%, rgba(10,159,130,1) 100%)
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+
+.carditem
+  margin-top: 30px
+  gap: 10rem
+  border-bottom: 1px solid  rgba(10,159,130,1)
+ 
+.card-projeto
+  background:  linear-gradient(135deg, rgba(10,159,130,1) 0%, rgba(5,6,6,1) 26%, rgba(21,33,31,1) 82%, rgba(10,159,130,1) 100%)
+  gap: 1rem
+  flex-direction: column
+  align-items: center
+  text-align: center
+  border: 2px
+  border-radius: 5rem
+
+  margin-bottom: 2rem
+
+.titli
+  font-size: 1.5rem
+  color: #bddfb3
+  margin: 1rem
+
+.descricao-projeto
+  font-size: 1.5rem
+  color: #bddfb3
+  margin: 1rem
+
+ 
+
+.cardiconiphon
+  width: 10rem
+
+.cardiconnotebook
+  width: 20rem
+
+
+
+
+//.pulse1
+  animation: Pulse 2s cubic-bezier(0.1, 0.4, 0.5, 1) 0.40s infinite
+
+
+@keyframes Pulse
+  from
+    box-shadow: 0 0 0 0 $button-pulse-color
+
+  to
+    box-shadow: 0 0 4px 20px transparent
+
+
+
+
+
