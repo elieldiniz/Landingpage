@@ -1,65 +1,98 @@
 // Sass Responsivo
 @use '../libs/variables'
 @use '../libs/mixin'
-    
 
 $button-pulse-color: #00e6f791
 
 .project-container
-  background:  linear-gradient(135deg, rgba(10,159,130,1) 0%, rgba(5,6,6,1) 26%, rgba(21,33,31,1) 82%, rgba(10,159,130,1) 100%)
+  background: linear-gradient(135deg, rgba(10, 159, 130, 1) 0%, rgba(5, 6, 6, 1) 26%, rgba(21, 33, 31, 1) 82%, rgba(10, 159, 130, 1) 100%)
   display: flex
   flex-direction: column
-  flex-wrap: wrap
+  align-items: center // Centraliza os itens
+  padding: 2rem 0 // Adiciona padding no container
 
-.carditem
-  margin-top: 30px
-  gap: 10rem
-  border-bottom: 1px solid  rgba(10,159,130,1)
- 
-.card-projeto
-  background:  linear-gradient(135deg, rgba(10,159,130,1) 0%, rgba(5,6,6,1) 26%, rgba(21,33,31,1) 82%, rgba(10,159,130,1) 100%)
+.Header
+  background: linear-gradient(135deg, rgba(10, 159, 130, 1) 0%, rgba(5, 6, 6, 1) 26%, rgba(21, 33, 31, 1) 82%, rgba(10, 159, 130, 1) 100%)
+  padding: 2rem 3rem
+  display: flex
+  flex-direction: column // Muda para coluna em telas pequenas
+  justify-content: center // Centraliza o cabeçalho
+  align-items: center // Centraliza verticalmente
   gap: 1rem
-  flex-direction: column
-  align-items: center
-  text-align: center
-  border: 2px
-  border-radius: 5rem
-
+  box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 20%), 0 0.1rem 0.5rem rgb(0 0 0 / 30%), 0 0.2rem 1.5rem rgb(0 0 0 / 40%)
+  backdrop-filter: blur(5px)
+  border-radius: 0.5rem // Arredonda os cantos do cabeçalho
   margin-bottom: 2rem
 
+  @media (min-width: 768px) // Para telas maiores, coloca itens em linha
+    flex-direction: row // Muda para linha em telas grandes
+    justify-content: space-between // Espalha os itens
+    padding: 2rem 4rem // Aumenta o padding para mais espaço em telas grandes
+
+.card-container
+  display: flex // Flex para colocar os itens lado a lado em telas grandes
+  flex-direction: column // Muda para coluna em telas pequenas
+  align-items: center // Centraliza os cartões
+  gap: 1rem // Espaçamento entre os cartões
+  width: 100% // Largura total para responsividade
+  max-width: 1200px // Limita a largura máxima
+  padding: 1rem // Adiciona padding
+
+.carditem
+  background: linear-gradient(135deg, rgba(10, 159, 130, 1) 0%, rgba(5, 6, 6, 1) 26%, rgba(21, 33, 31, 1) 82%, rgba(10, 159, 130, 1) 100%)
+  border-radius: 1rem
+  padding: 1rem
+  box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 20%), 0 0.1rem 0.5rem rgb(0 0 0 / 30%), 0 0.2rem 1.5rem rgb(0 0 0 / 40%)
+  transition: transform 0.2s ease // Adiciona uma transição para efeito de hover
+  width: 80% // Largura reduzida para os cartões
+  max-width: 300px // Largura máxima para evitar que fiquem muito grandes
+  margin: 0 auto // Centraliza horizontalmente
+
+  &:hover
+    transform: scale(1.05) // Efeito de aumento ao passar o mouse
+
 .titli
-  font-size: 1.5rem
+  font-size: 1.3rem // Tamanho da fonte reduzido
   color: #bddfb3
-  margin: 1rem
+  margin: 1rem 0
 
 .descricao-projeto
-  font-size: 1.5rem
+  font-size: 0.9rem // Tamanho da fonte menor
   color: #bddfb3
-  margin: 1rem
+  margin: 0.5rem 0
 
- 
+.cardicon-container
+  display: flex // Flex para colocar os ícones lado a lado
+  justify-content: center // Centraliza horizontalmente
+  align-items: center // Alinha verticalmente
+  gap: 1rem // Espaçamento entre os ícones
+
+.cardiconiphon,
+.cardiconnotebook
+  max-width: 80% // Largura máxima para as imagens
+  height: auto // Mantém a proporção da imagem
 
 .cardiconiphon
-  width: 10rem
+  width: 6rem // Ajusta a largura da imagem do iPhone
 
 .cardiconnotebook
-  width: 20rem
+  width: 10rem // Ajusta a largura da imagem do notebook
 
+// Media Queries para Responsividade
+@media (max-width: 768px)
+  .Header
+    flex-direction: column // Muda a direção do cabeçalho para coluna em telas menores
+    padding: 1rem
 
+  .carditem
+    width: 90% // Faz os cartões ocuparem 90% da largura em telas menores
+    margin-bottom: 1rem // Adiciona margem inferior para espaçamento
 
+  .titli
+    font-size: 1.2rem // Tamanho da fonte menor em telas pequenas
 
-//.pulse1
-  animation: Pulse 2s cubic-bezier(0.1, 0.4, 0.5, 1) 0.40s infinite
+  .descricao-projeto
+    font-size: 0.8rem // Tamanho da fonte menor em telas pequenas
 
-
-@keyframes Pulse
-  from
-    box-shadow: 0 0 0 0 $button-pulse-color
-
-  to
-    box-shadow: 0 0 4px 20px transparent
-
-
-
-
-
+.buttonProjct 
+  display: flex

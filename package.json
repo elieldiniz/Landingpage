@@ -9,14 +9,15 @@
     "preview": "vite preview",
     "build:tailwind": "./src/styles/input.css -o ./dist/output.css --watch",
     "start": "npm run build:tailwind && react-scripts start"
-
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
     "axios": "^1.6.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "next": "^14.2.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

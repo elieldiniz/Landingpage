@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import '../../styles/components/projetos/projectconteiner.sass';
-import mokupsiphone from '../../img/iPhonMockup.png'
-import MacbookMockup from '../../img/MacbookMockup.png'
+import '../styles/components/projetos/projectconteiner.sass';
+import mokupsiphone from '../img/iPhonMockup.png'
+import MacbookMockup from '../img/MacbookMockup.png'
+import Header from '../components/header/Header'
 
-const ProjectContainer = () => {
+const Projetos = () => {
   const [projects] = useState([
     {
       id: 1,
@@ -38,6 +39,9 @@ const ProjectContainer = () => {
 
   return (
     <section className='project-container'>
+      <div className='Header'>
+        <Header/>
+      </div>
       <div className="CardProject   ">
 
             {projects.slice(startIndex, endIndex)
@@ -74,4 +78,4 @@ const ProjectContainer = () => {
   );
 };
 
-export default ProjectContainer;
+export default Projetos;
