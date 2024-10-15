@@ -13,7 +13,7 @@ export default function Header() {
                 </ul>
                 <ul className='menu-items'>
                     <li>
-                     Serviços
+                        <a href="/sobre">Sobre</a>
                     </li>
                 </ul>
                 <ul className='menu-items'>

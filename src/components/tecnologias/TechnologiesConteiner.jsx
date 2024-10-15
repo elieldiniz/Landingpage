@@ -14,7 +14,7 @@ const iconsTech = [
     {name: 'Html', image:html},
     {name:'Css',image:css},
     {name:'React.js', image:reactjs },
-    {name: 'node.js', image: nodejs},
+    {name: 'node.js', image:nodejs},
 
     
     

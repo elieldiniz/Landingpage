@@ -1,24 +1,32 @@
-.loop-slider 
-  background: linear-gradient(240deg, rgba(10, 159, 130, 1) 0%, rgba(21, 33, 31, 1) 21%, rgba(5, 6, 6, 1) 82%, rgba(10, 159, 130, 1) 100%)
+.loop-slider
+  display: flex
+  overflow: hidden // Oculta os itens que saem da tela
+  position: relative // Para que os itens sejam posicionados corretamente
+  width: 100% // Para que o slider ocupe toda a largura disponível
 
-  .inner 
+  .inner
     display: flex
     width: fit-content
-    animation-name: loop
-    animation-timing-function: linear
-    animation-iteration-count: infinite
-    --direction: normal
-    animation-direction: var(--direction)
-    --duration: 15951ms
-    animation-duration: var(--duration)
+    animation: fadeScale 10s ease-in-out infinite // Nova animação de fade e scale
 
-  // Media Query para telas menores
-  @media (max-width: 768px) // Ajustes para telas pequenas (tablet e celular)
-    .inner 
-      width: auto // Permite que o conteúdo se ajuste sem quebrar
-      padding: 0 1rem // Adiciona um padding lateral para evitar que fique muito colado nas bordas da tela
+    @media (max-width: 768px)
+      flex-wrap: nowrap // Mantém os itens em linha
+      padding: 0 1rem
 
-.tag 
+@keyframes fadeScale
+  0%
+    opacity: 0 // Começa invisível
+    transform: scale(0.8) // Inicia um pouco menor
+  20%
+    opacity: 1 // Torna-se visível
+    transform: scale(1) // Cresce para o tamanho normal
+  80%
+    opacity: 1 // Mantém visível
+  100%
+    opacity: 0 // Desaparece novamente
+    transform: scale(0.8) // Encolhe para dar um efeito de saída
+
+.tag
   display: flex
   align-items: center
   gap: 0 0.2rem
@@ -27,23 +35,16 @@
   background-color: #334155
   border-radius: 0.4rem
   padding: 0.7rem 1rem
-  margin-right: 1rem // Must used margin-right instead of gap for the loop to be smooth
+  margin-right: 1rem
   box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 20%), 0 0.1rem 0.5rem rgb(0 0 0 / 30%), 0 0.2rem 1.5rem rgb(0 0 0 / 40%)
   backdrop-filter: blur(5px)
   background-image: linear-gradient(to top, rgba(10, 159, 130, 1), rgba(255, 255, 255, 0))
 
-  span 
+  span
     font-size: 1.2rem
     color: #64748b
 
-  // Media Query para telas menores
-  @media (max-width: 768px) // Ajustes para telas pequenas (tablet e celular)
-    font-size: 0.8rem // Diminuindo o tamanho da fonte
-    padding: 0.5rem 0.7rem // Diminuindo o padding
-    margin-right: 0.5rem // Diminuindo a margem para ficar mais espaçado
-
-@keyframes loop 
-  0% 
-    transform: translateX(-50%)
-  100% 
-    transform: translateX(0)
+  @media (max-width: 768px)
+    font-size: 0.8rem
+    padding: 0.5rem 0.7rem
+    margin-right: 0.5rem
