@@ -4,38 +4,53 @@
 
 
 #sidebar 
-  background:  linear-gradient(240deg, rgba(10,159,130,1) 0%,  rgba(21,33,31,1) 21%, rgba(5,6,6,1) 82%, rgba(10,159,130,1) 100%)
   display: flex
+  background: linear-gradient(240deg, rgba(10,159,130,1) 0%, rgba(21,33,31,1) 21%, rgba(5,6,6,1) 82%, rgba(10,159,130,1) 100%)
   padding-top: 4rem
-  align-items: flex-start
+  align-items: center
   justify-content: center
-  height: 95vh
+  height: 100vh
   border: solid 1px rgba(10, 159, 130, 1)
   flex-wrap: wrap
 
-
-
   @media (max-width: 995px) 
     flex-direction: column
-    align-items: center
-    height: auto 
+    height: auto
 
+.container-page
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  max-width: 995px
+  padding: 2rem 1rem
+  align-items: center // Centraliza os elementos
 
- 
+  @media (max-width: 995px) 
+    padding: 1rem 0
 
 .avatar 
+  display: flex
+  width: 20rem
+  justify-content: center
   filter: grayscale(100%)
-  border-radius: 20rem
-  width: 15rem
-  margin-left: 6rem
+  margin-bottom: 2rem // Espaçamento inferior
+  border-radius: 3rem
+
   
 .sidebarvegation
-  display: flex
-  justify-content: center
-  border-radius: 2rem
-  
-  .sidebarvegation:hover
-    background:#bddfb3
+    background: linear-gradient(135deg, rgba(10, 159, 130, 1) 0%, rgba(5, 6, 6, 1) 26%, rgba(21, 33, 31, 1) 82%, rgba(10, 159, 130, 1) 100%)
+    padding: 2rem 3rem
+    display: flex
+    flex-direction: column // Muda para coluna em telas pequenas
+    justify-content: center // Centraliza o cabeçalho
+    align-items: center // Centraliza verticalmente
+    gap: 1rem
+    box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 20%), 0 0.1rem 0.5rem rgb(0 0 0 / 30%), 0 0.2rem 1.5rem rgb(0 0 0 / 40%)
+    backdrop-filter: blur(5px)
+    border-radius: 0.5rem // Arredonda os cantos do cabeçalho
+    margin-bottom: 2rem
+
 
 
   

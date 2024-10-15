@@ -29,22 +29,13 @@ $button-pulse-color: #00e6f791
     justify-content: space-between // Espalha os itens
     padding: 2rem 4rem // Aumenta o padding para mais espaço em telas grandes
 
-.card-container
-  display: flex // Flex para colocar os itens lado a lado em telas grandes
-  flex-direction: column // Muda para coluna em telas pequenas
-  align-items: center // Centraliza os cartões
-  gap: 1rem // Espaçamento entre os cartões
-  width: 100% // Largura total para responsividade
-  max-width: 1200px // Limita a largura máxima
-  padding: 1rem // Adiciona padding
-
 .carditem
   background: linear-gradient(135deg, rgba(10, 159, 130, 1) 0%, rgba(5, 6, 6, 1) 26%, rgba(21, 33, 31, 1) 82%, rgba(10, 159, 130, 1) 100%)
   border-radius: 1rem
   padding: 1rem
   box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 20%), 0 0.1rem 0.5rem rgb(0 0 0 / 30%), 0 0.2rem 1.5rem rgb(0 0 0 / 40%)
   transition: transform 0.2s ease // Adiciona uma transição para efeito de hover
-  width: 80% // Largura reduzida para os cartões
+  width: 100% // Largura reduzida para os cartões
   max-width: 300px // Largura máxima para evitar que fiquem muito grandes
   margin: 0 auto // Centraliza horizontalmente
 
@@ -61,11 +52,6 @@ $button-pulse-color: #00e6f791
   color: #bddfb3
   margin: 0.5rem 0
 
-.cardicon-container
-  display: flex // Flex para colocar os ícones lado a lado
-  justify-content: center // Centraliza horizontalmente
-  align-items: center // Alinha verticalmente
-  gap: 1rem // Espaçamento entre os ícones
 
 .cardiconiphon,
 .cardiconnotebook
@@ -74,9 +60,6 @@ $button-pulse-color: #00e6f791
 
 .cardiconiphon
   width: 6rem // Ajusta a largura da imagem do iPhone
-
-.cardiconnotebook
-  width: 10rem // Ajusta a largura da imagem do notebook
 
 // Media Queries para Responsividade
 @media (max-width: 768px)
@@ -96,3 +79,8 @@ $button-pulse-color: #00e6f791
 
 .buttonProjct 
   display: flex
+  justify-content: center 
+
+
+
+  

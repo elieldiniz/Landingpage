@@ -11,7 +11,7 @@ import Header from '../header/Header'
 const Sidebar = () => {
     return(
         <aside id="sidebar" className="scroll-bg">
-          <div class="">
+          <div class="container-page">
             <img src={Avatar} alt="Avatar" class="avatar" />
             <InformationContainer/>
             <SocialNetworks />
