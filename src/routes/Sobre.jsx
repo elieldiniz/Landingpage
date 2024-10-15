@@ -6,7 +6,7 @@ const Sobre = () => {
         <aside id="sobre-container" className="scroll-bg">
             <div>
                 <img src={Avatar} alt="Avatar" class="avatar" />
-                <h1>Eliel Diniz </h1>
+                <h1 className='title-name'>Eliel Diniz </h1>
             </div>
     
             <p className='text'>Nos últimos 2 anos, tenho me dedicado ao desenvolvimento web, construindo um portfólio diversificado de projetos. Comecei explorando os fundamentos da programação e, atualmente, sou capaz de desenvolver aplicações, utilizando tecnologias como React.js, Next.js, NestJS, TypeScript e Node.js.
