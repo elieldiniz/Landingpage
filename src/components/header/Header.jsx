@@ -18,7 +18,7 @@ export default function Header() {
                 </ul>
                 <ul className='menu-items'>
                     <li>
-                        <a src ="https://api.whatsapp.com/send?phone=5569999311324">Contato</a>
+                        <a href="https://api.whatsapp.com/send?phone=5569999311324">Contato</a>
                     </li>
                 </ul>
             </div>
